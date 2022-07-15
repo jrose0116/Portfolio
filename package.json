@@ -4,6 +4,7 @@
   "description": "About Me",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "dev": "concurrently \"npm run startnm\" \"npm run watchtw\"",
     "startnm": "nodemon .",
     "buildtw": "npx tailwindcss -i ./style.css -o ./public/style.css",
