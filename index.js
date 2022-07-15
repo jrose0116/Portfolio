@@ -13,9 +13,9 @@ app.use('/', express.static('public',{extensions: ['html']}));
 app.get('*', (req, res) => { res.redirect('/') })
 
 //find port automatically or 3000 if local
-const port = process.env.port||3000;
+const port = process.env.PORT||3000;
 
 //listens for http requests using app
-app.listen(port, '0.0.0.0', ()=>{
+app.listen(port, ()=>{
     console.log("Connected...")
 });
