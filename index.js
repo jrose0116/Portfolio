@@ -16,6 +16,6 @@ app.get('*', (req, res) => { res.redirect('/') })
 const port = process.env.port||3000;
 
 //listens for http requests using app
-app.listen(port, ()=>{
+app.listen(port, '0.0.0.0', ()=>{
     console.log("Connected...")
 });
