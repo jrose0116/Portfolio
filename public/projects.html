@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/hamburgers.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/flowbite/flowbite.js"></script>
+    <title id="title">Jacob Rose | Projects</title>
+</head>
+<body class="static bg-white dark:bg-zinc-700 w-screen h-screen lg+:overflow-hidden">
+    <div id="nav"></div>
+    <div class="mb-2 dark:border-gray-700 pt-20">
+        <ul class="flex flex-wrap justify-center mx-auto text-lg font-normal text-center bg-zinc-200 dark:bg-zinc-800 rounded-lg w-11/12 px-2" id="myTab" data-tabs-toggle="#content" role="tablist">
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-400 border-blue-600 dark:border-blue-500" id="portfolio-tab" data-tabs-target="#portfolio" type="button" role="tab" aria-controls="portfolio" aria-selected="true">Portfolio</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 rounded-t-lg border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-500" id="gauntic-tab" data-tabs-target="#gauntic" type="button" role="tab" aria-controls="gauntic" aria-selected="false">Gauntic</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 rounded-t-lg border-b-2 hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 text-gray-500 dark:text-gray-400 border-gray-100 dark:border-gray-500" id="collabracart-tab" data-tabs-target="#collabracart" type="collabracart" role="tab" aria-controls="collabracart" aria-selected="false">CollabraCart</button>
+            </li>
+        </ul>
+    </div>
+    <div class="pb-[68px]">
+        <div id="content" class="w-11/12 mx-auto bg-zinc-200 rounded-lg dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 font-light text-base text-center h-fit">
+            <!-- Portfolio -->
+            <div class="p-4 " id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+                <h1 class="mb-3 text-lg">My portfolio website is my first major self-driven individual project!</h1>
+                <img src="src/Portfolio Image.png" class="w-1/2 lg:w-2/3 rounded-3xl mx-auto">
+                <h2 class="py-3.5">I felt like I needed something to present myself. What better was to show myself than showing myself?</h2>
+                <h2 class="py-3.5">
+                    I wanted to create this website in order to show that I am capable of making simple yet effective websites in a short time period. For reference, this website was created over<br class="lg:hidden">
+                    the course of a week while working full-time. This website allows me to have something to come back to if I ever run out of project ideas.
+                </h2>
+                <h2 class="py-3.5">This website was created using: HTML, CSS, JavaScript, Express, TailWind, and a few other dependencies.</h2>
+            </div>
+            <!-- Gauntic -->
+            <div class="hidden p-4" id="gauntic" role="tabpanel" aria-labelledby="gauntic-tab">
+                <h1 class="mb-3 text-xl">Even in college, I continued to work with some of my high-school friends. We created a group known as Gauntic.</h1>
+                <h2 class="py-3.5 text-lg">The main project that we worked on together was Coderigo. Coderigo is a developer social media platform which uses Typescript React, Express, Node, and MySQL.</h2>
+                <img src="src/Coderigo Comments.png" class="w-1/3 rounded-3xl mx-auto lg:w-2/3">
+                <h2 class="py-2.5 text-base">Above is a picture of the comments on a sample post. I handled the initialization of the database as well as the queries to add more instances. <br class="lg:hidden">This front-end design as well as the posts were not created by me. Credits go to Elliot Topper for the front-end, back-end, and direction of the site.</h2>
+                <h2 class="py-3.5 text-lg">My main contributions were in JavaScript and MySQL. I used queries to insert and use data within a database hosted locally. <br class="lg:hidden"> This handled all of the users, posts, likes and even comments. I also formatted JSONs to be used in the front-end.</h2>
+            </div>
+            <div class="hidden p-4 text-lg" id="collabracart" role="tabpanel" aria-labelledby="collabracart-tab">
+                <h1 class="mb-3 text-xl">In 2020, I was the Java lead in a group of three to develop an application that won the 2020 Congressional App Challenge.</h1>
+                <h2 class="py-3.5 text-lg">After conceiving the app, we initially prototyped in Adobe XD which allowed us to make a design that could fit a responsive interface.</h2>
+                <img src="src/Collabracart Image.png" class="w-1/4 rounded-3xl mx-auto lg:w-1/2">
+                <h2 class="py-3.5 text-lg">I worked mostly in functionality. This includes the main framework of the application which includes the navigation, headers, and settings.<br class="lg:hidden">I also made final adjustments to the stylesheet of the views to ensure that they were responsive and functional. I was also the editor for the video submitted.</h2>
+                <a target="_blank" href="https://www.congressionalappchallenge.us/20-NJ04/" class="underline underline-offset-2">Click Here To Be Redirected to the Congressional App Challenge Winnner Post</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/tabs.js"></script>
+</body>
+
+</html>

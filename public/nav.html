@@ -1,0 +1,32 @@
+<div>
+    <nav id="innerNav" class="lg+:bg-zinc-900 border-solid border-b-0 lg:flex lg:flex-col border-zinc-100 fixed top-0 inset-x-0 animate-in slide-in-from-top duration-1500 lg:duration-0 w-screen opacity-100 z-50">
+        <div class="bg-zinc-900 lg+:hidden w-screen p-2">
+            <button class="hamburger hamburger--spin" type="button" onclick="burger()">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <h id="title-display" class="text-white text-4xl"></h>
+            <script>
+                var titleDisp = document.getElementById("title-display");
+                titleDisp.innerHTML = $("#title").text().slice(12);
+            </script>
+        </div>
+        <ul id="pulloutNav" class="flex justify-around items-center text-zinc-200 py-3 w-4/5 lg:w-screen m-auto lg:mt-8 text-3xl font-light decoration-1 lg:flex-col lg:py-1 lg:text-5xl lg:text-center lg:gap-8 lg:opacity-0 lg:hidden transition-opacity duration-300">
+            <li><a href="/" class="hover:text-zinc-100 transition-colors duration-250">Home</a></li>
+            <!-- <li><a href="/about" class="hover:text-zinc-100 transition-colors duration-250">About</a></li> -->
+            <li><a href="/resume" class="hover:text-zinc-100 transition-colors duration-250">Resume</a></li>
+            <li><a href="/projects" class="hover:text-zinc-100 transition-colors duration-250">Projects</a></li>
+            <li><a href="/experiences" class="hover:text-zinc-100 transition-colors duration-250">Experiences</a></li>
+            <li><a href="/skills" class="hover:text-zinc-100 transition-colors duration-250">Skills</a></li>
+            <li class="hidden lg:block"><button id="darkbutton" onclick="toggleButton()" class="bg-zinc-400 dark:bg-zinc-900 text-5xl dark:text-zinc-200 text-zinc-700 font-regular lg:py-2 lg:px-8 rounded lg:mx-auto">Dark Mode</button></li>
+        </ul>
+        <div class="absolute right-8 top-5 lg:hidden">
+            <label for="dark-toggle" class="inline-flex relative items-center cursor-pointer">
+                <input type="checkbox" value="" onclick="darkToggle()" id="dark-toggle" class="sr-only peer" checked>
+                <div class="w-11 h-6 bg-zinc-400 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-zinc-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-zinc-600 peer-checked:bg-zinc-600"></div>
+                <span class="ml-2 font-light text-zinc-400 dark:text-zinc-100">Dark Mode</span>
+            </label>
+        </div>
+    </nav>
+</div>

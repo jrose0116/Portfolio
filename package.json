@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "About Me",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run startnm\" \"npm run watchtw\"",
+    "startnm": "nodemon .",
+    "buildtw": "npx tailwindcss -i ./style.css -o ./public/style.css",
+    "watchtw": "npx tailwindcss -i ./style.css -o ./public/style.css --watch"
+  },
+  "author": "Jacob Rose",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "flowbite": "^1.4.7",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "tailwindcss": "^3.1.4",
+    "tailwindcss-animate": "^1.0.5"
+  }
+}
