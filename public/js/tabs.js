@@ -14,6 +14,11 @@ const tabElements = [
         triggerEl: document.querySelector('#collabracart-tab'),
         targetEl: document.querySelector('#collabracart')
     },
+    {
+        id: 'lease',
+        triggerEl: document.querySelector('#lease-tab'),
+        targetEl: document.querySelector('#lease')
+    }
 ];
 
 const options = {
