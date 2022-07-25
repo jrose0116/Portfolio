@@ -18,6 +18,11 @@ const tabElements = [
         id: 'lease',
         triggerEl: document.querySelector('#lease-tab'),
         targetEl: document.querySelector('#lease')
+    },
+    {
+        id: 'tiling',
+        triggerEl: document.querySelector('#tiling-tab'),
+        targetEl: document.querySelector('#tiling')
     }
 ];
 
