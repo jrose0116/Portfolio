@@ -100,12 +100,10 @@
                         <p>
                             Classic Merge Sort: Individually add each item of a given array from lowest to highest by merging.
                         </p>
-                        <p class="mt-3 mb-5">This problem was solved using recursion to split the array into two sorting them then recombining them by traversing
-                            each of the two sorted arrays and adding the lowest value each time and increasing the index of array that had the lowest by 1. 
-                            Once one array is fully traversed, it will add the other array to the end since it will be sorted and greater than the last value in the first array.
-                            The reason that the left and right arrays are always sorted is because the left and right are recursively sorted from when there are 2 items in an array via mergesort.
-                            One special case used is to return if the array has one or less values. The length of one case is required even for arrays larger than one because it stops recursion where it is needed.
-                            The second special case is if every item in the array is the same. In this case, it would be best to save the time if the array or parts of the array are the same element adjacent to each other.
+                        <p class="mt-3 mb-5">This problem was solved using recursion to split the array into two, sorting them, then recombining them by traversing
+                            each of the two sorted arrays. The recursively split elements merge up and sort while merging until the array is sorted.
+                            One special case used is to return if the array has one or less values. The second special case is if every item in the array is the same.
+                            In this case, it would be best to save the time if the array or parts of the array are the same element adjacent to each other.
                             I also added an optional parameter for tabbing over so the recursion is easier to see. Test cases are included.
                         </p>
                         <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/MergeSort.java" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
