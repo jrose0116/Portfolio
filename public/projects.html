@@ -82,6 +82,19 @@
             <div class="hidden p-4 text-lg" id="small" role="tabpanel" aria-labelledby="small-tab">
                 <h1 class="mb-3 text-lg font-normal">Here are a few basic programming problems I have solved:</h1>
                 <details class = "mx-[15%] my-1 lg:mx-1">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2">Insertion Sort</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm">
+                        <p>
+                            Classic Insertion Sort: Place each item into an array by moving it backwards and inserting it into the right place.
+                        </p>
+                        <p class="mt-3 mb-5">This was solved by starting at the index of 1 and moving the item backwards until the item before it is not higher or the index is 0.
+                            Once this is done where the index is equal to the length-1 (When every element has been accounted for), the list will be sorted. I also added some prints
+                            that show which is the currently moving element as well as the steps to reach the sorted list. Test cases are included.
+                        </p>
+                        <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/InsertionSort.java" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
+                    </div>
+                </details>
+                <details class = "mx-[15%] my-1 lg:mx-1">
                     <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2">Merge Sort</summary>
                     <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm">
                         <p>
@@ -93,7 +106,7 @@
                             The reason that the left and right arrays are always sorted is because the left and right are recursively sorted from when there are 2 items in an array via mergesort.
                             One special case used is to return if the array has one or less values. The length of one case is required even for arrays larger than one because it stops recursion where it is needed.
                             The second special case is if every item in the array is the same. In this case, it would be best to save the time if the array or parts of the array are the same element adjacent to each other.
-                            I also added an optional parameter for tabbing over so the recursion is easier to see.
+                            I also added an optional parameter for tabbing over so the recursion is easier to see. Test cases are included.
                         </p>
                         <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/MergeSort.java" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
                     </div>
