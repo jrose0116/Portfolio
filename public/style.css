@@ -1557,6 +1557,10 @@ video {
     gap: 2rem;
   }
 
+  .lg\:overflow-auto {
+    overflow: auto;
+  }
+
   .lg\:bg-zinc-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(39 39 42 / var(--tw-bg-opacity));
