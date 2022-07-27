@@ -82,8 +82,21 @@
             <div class="hidden p-4 text-lg" id="small" role="tabpanel" aria-labelledby="small-tab">
                 <h1 class="mb-3 text-lg font-normal">Here are a few basic programming problems I have solved:</h1>
                 <details class = "mx-[15%] my-1 lg:mx-1">
-                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2">Insertion Sort</summary>
-                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Bubble Sort</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
+                        <p>
+                            Classic Bubble Sort: Sort the elements by repeated swapping forwards.
+                        </p>
+                        <p class="mt-3 mb-5">This problem was solved by setting an index j (i is for iterations) and iterating through the array by checking if the element at index j+1 is less than at j.
+                            In this case, they would swap. The iteration would end once j equals the length of the array. This will iterate one time for each element in the array. This is because if the
+                            lowest number is at the back of the array, it would take exactly the amount of items as iterations to sort said element to the front.
+                        </p>
+                        <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/BubbleSort.py" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
+                    </div>
+                </details>
+                <details class = "mx-[15%] my-1 lg:mx-1">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Insertion Sort</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
                         <p>
                             Classic Insertion Sort: Place each item into an array by moving it backwards and inserting it into the right place.
                         </p>
@@ -94,8 +107,8 @@
                     </div>
                 </details>
                 <details class = "mx-[15%] my-1 lg:mx-1">
-                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2">Merge Sort</summary>
-                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Merge Sort</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
                         <p>
                             Classic Merge Sort: Individually add each item of a given array from lowest to highest by merging.
                         </p>
@@ -109,8 +122,22 @@
                     </div>
                 </details>
                 <details class = "mx-[15%] my-1 lg:mx-1">
-                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2">Staircase Recursion Problem</summary>
-                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Quick Sort</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
+                        <p>
+                            Classic Quick Sort: Places a pivot with all lesser elements on the left and all higher elements on the right then recursively sort the left and right. 
+                        </p>
+                        <p class="mt-3 mb-5">This was solved by holding an index for the pivot (the last element in this case) and set an i and j value to hold indexes for min and maxes.
+                            Anything between j and the end of the array should be above the pivot and anything between i and the start of the array should below the pivot. If i or j encounters
+                            an element that doesn't belong, they will either swap with each other if both have reached oddities or they will place the pivot at that spot and recurse the mins and maxes
+                            until all elements have been individually been placed as the pivot or the array is one element or empty.
+                        </p>
+                        <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/QuickSort.py" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
+                    </div>
+                </details>
+                <details class = "mx-[15%] my-1 lg:mx-1">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Staircase Recursion Problem</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
                         <p>
                             Here is the problem: There's a staircase with N steps, and you can climb 1 or 2 steps at a time. Given N, write a function that returns the number
                             of unique ways you can climb the staircase. The order of the steps matters. What if, instead of being able to climb 1 or 2 steps at a time, you could
@@ -118,6 +145,20 @@
                         </p>
                         <p class="mt-3 mb-5">This problem was solved easily using recursion by iterating through all possibilities and adding 1 to the total if the path reaches n = 0 and stopping the operation if it goes over.</p>
                         <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/Staircase.java" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
+                    </div>
+                </details>
+                <details class = "mx-[15%] my-1 lg:mx-1">
+                    <summary class="bg-zinc-300 dark:bg-zinc-600 rounded-lg py-2 border-2 border-zinc-400 dark:border-0">Sum of Two Elements Problem</summary>
+                    <div class="bg-zinc-300 dark:bg-zinc-500 rounded-lg mt-1 px-4 py-4 lg:text-sm border-2 border-zinc-400">
+                        <p>
+                            Here is the problem: Given a list of numbers and a number k, return whether any two numbers from the list add up to k. For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
+                        </p>
+                        <p class="mt-3 mb-5">This was very simple. Given an array, I placed indexes i and j. i is initially placed at the start of the ray and a while loop is used to go through every iteration of i.
+                            For each iteration of i, j is placed at i+1 then 1 is added each time. If, at any point, i + j = k, True is returned. The reason j is i+1 instead of set to the start of the array is because
+                            once the first item of the array has been i, every combination with that number has already been tested thus is a waste of resources. Also, there are no duplicates and a special case would be
+                            needed for when i = j. If all iterations have been done and i + j = k has not been reached, False is returned. False is also returned if the array has one or less variables.
+                        </p>
+                        <a target="_blank" href="https://github.com/jrose0116/Small-Problems/blob/master/twoAdd.py" class="underline underline-offset-2">Click Here To Be Redirected to GitHub</a>
                     </div>
                 </details>
             </div>
