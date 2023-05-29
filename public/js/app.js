@@ -1,6 +1,6 @@
 $(function(){
-    $("#nav").load("nav.html", checkDark)
-    $("#footer").load("footer.html", checkDark)
+    $("#nav").load("./nav.html", checkDark)
+    $("#footer").load("./footer.html", checkDark)
 });
 
 function darkToggle() {

@@ -812,14 +812,6 @@ video {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-.grid-cols-7 {
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -996,10 +988,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .py-4 {
@@ -1662,18 +1650,6 @@ video {
 
   .lg\+\:hidden {
     display: none;
-  }
-
-  .lg\+\:h-\[93\.5\%\] {
-    height: 93.5%;
-  }
-
-  .lg\+\:h-\[92\.5\%\] {
-    height: 92.5%;
-  }
-
-  .lg\+\:h-\[91\.5\%\] {
-    height: 91.5%;
   }
 
   .lg\+\:h-\[90\.5\%\] {
