@@ -116,7 +116,7 @@ const tabElements = [
     {
         id: 'flow',
         triggerEl: document.querySelector('#flow-tab'),
-        targetEl: document.querySelector('#flow')
+        targetEl: document.querySelector('#flowsolve')
     }
 ];
 
