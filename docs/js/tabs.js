@@ -107,6 +107,16 @@ const tabElements = [
         id: 'small',
         triggerEl: document.querySelector('#small-tab'),
         targetEl: document.querySelector('#small')
+    },
+    {
+        id: 'sorting',
+        triggerEl: document.querySelector('#sorting-tab'),
+        targetEl: document.querySelector('#sorting')
+    },
+    {
+        id: 'flow',
+        triggerEl: document.querySelector('#flow-tab'),
+        targetEl: document.querySelector('#flow')
     }
 ];
 
