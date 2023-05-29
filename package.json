@@ -7,8 +7,8 @@
     "start": "node index.js",
     "dev": "concurrently \"npm run startnm\" \"npm run watchtw\"",
     "startnm": "nodemon .",
-    "buildtw": "npx tailwindcss -i ./style.css -o ./public/style.css",
-    "watchtw": "npx tailwindcss -i ./style.css -o ./public/style.css --watch"
+    "buildtw": "npx tailwindcss -i ./style.css -o ./docs/style.css",
+    "watchtw": "npx tailwindcss -i ./style.css -o ./docs/style.css --watch"
   },
   "author": "Jacob Rose",
   "license": "ISC",
