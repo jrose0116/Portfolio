@@ -103,11 +103,11 @@ const tabElements = [
         triggerEl: document.querySelector('#tiling-tab'),
         targetEl: document.querySelector('#tiling')
     },
-    {
-        id: 'small',
-        triggerEl: document.querySelector('#small-tab'),
-        targetEl: document.querySelector('#small')
-    },
+    // {
+    //     id: 'small',
+    //     triggerEl: document.querySelector('#small-tab'),
+    //     targetEl: document.querySelector('#small')
+    // },
     {
         id: 'sorting',
         triggerEl: document.querySelector('#sorting-tab'),
