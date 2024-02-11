@@ -84,9 +84,19 @@ const tabElements = [
         targetEl: document.querySelector('#portfolio')
     },
     {
-        id: 'gauntic',
-        triggerEl: document.querySelector('#gauntic-tab'),
-        targetEl: document.querySelector('#gauntic')
+        id: 'wiki',
+        triggerEl: document.querySelector('#wiki-tab'),
+        targetEl: document.querySelector('#wiki')
+    },
+    {
+        id: 'ecommerce',
+        triggerEl: document.querySelector('#ecommerce-tab'),
+        targetEl: document.querySelector('#ecommerce')
+    },
+    {
+        id: 'coverletter',
+        triggerEl: document.querySelector('#coverletter-tab'),
+        targetEl: document.querySelector('#coverletter')
     },
     {
         id: 'collabracart',
@@ -99,16 +109,6 @@ const tabElements = [
         targetEl: document.querySelector('#lease')
     },
     {
-        id: 'tiling',
-        triggerEl: document.querySelector('#tiling-tab'),
-        targetEl: document.querySelector('#tiling')
-    },
-    // {
-    //     id: 'small',
-    //     triggerEl: document.querySelector('#small-tab'),
-    //     targetEl: document.querySelector('#small')
-    // },
-    {
         id: 'sorting',
         triggerEl: document.querySelector('#sorting-tab'),
         targetEl: document.querySelector('#sorting')
@@ -117,7 +117,12 @@ const tabElements = [
         id: 'flow',
         triggerEl: document.querySelector('#flow-tab'),
         targetEl: document.querySelector('#flowsolve')
-    }
+    },
+    {
+        id: 'carcalc',
+        triggerEl: document.querySelector('#carcalc-tab'),
+        targetEl: document.querySelector('#carcalc')
+    },
 ];
 
 const options = {
